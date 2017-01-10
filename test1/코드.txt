@@ -1,0 +1,20 @@
+Instantiate(explosion, spPoint.position, Quaternion.identity);
+
+Transform obj = Instantiate(bullet, spPoint.position, spPoint.rotation) as Transform;
+obj.GetComponent
+
+if(Input.GetButtonDown("Fire1"))
+        {
+            if (EventSystem.current.IsPointerOverGameObject() == false)
+            {
+                GameObject obj = Instantiate(fireObject) as GameObject;
+                obj.transform.position = firePoint.transform.position;
+                obj.GetComponent<Rigidbody>().velocity = cameraTransform.forward * power;
+            }
+        }   
+
+
+
+using UnityEngine.SceneMAnagement;
+
+SceneManager.LoadScene
